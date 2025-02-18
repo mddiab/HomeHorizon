@@ -249,65 +249,73 @@ body {
 
 /* Footer */
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #111;
     color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .social-links {
     display: flex;
-    gap: 1em;
+    gap: 15px;
 }
 
 .social-card {
-    width: 90px;
-    height: 90px;
-    outline: none;
+    width: 50px;
+    height: 50px;
     border: none;
-    background-color: white;
+    background-color: #222;
     border-radius: 50%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .social-card img {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
 }
 
 .social-card:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #03A9F4;
+    transform: scale(1.1);
+    background-color: #007bff;
 }
 
 .middle-content {
+    flex: 1;
+    max-width: 600px;
     text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
 }
 
 .quick-links {
     display: flex;
-    gap: 1em;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .quick-links a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.2s ease-in-out;
 }
 
 .quick-links a:hover {
-    text-decoration: underline;
+    color: #03A9F4;
 }
