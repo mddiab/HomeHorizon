@@ -230,6 +230,93 @@ body {
     max-width: 800px;
 }
 
+/* News Signup */
+#news-signup {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('static/newsimg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#news-signup h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#news-signup p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 25px;
+    max-width: 600px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#news-signup input[type="email"] {
+    padding: 12px 20px;
+    width: 50%;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#news-signup input[type="email"]:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+#news-signup button {
+    padding: 12px 30px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 50%;
+}
+
+#news-signup button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#news-signup img {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    width: 180px;
+    opacity: 0.1;
+    transform: rotate(15deg);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#news-signup:hover img {
+    opacity: 0.2;
+    transform: rotate(0deg);
+}
+
 /* Top Reviews */
 #top-reviews {
     padding: 80px 10%;
