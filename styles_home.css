@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
-    background-color: #f4f6f9;
 }
 
 /* Light & Dark Mode */
