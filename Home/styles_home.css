@@ -76,6 +76,10 @@ body {
     outline: none;
 }
 
+.hero input::placeholder{
+    font-style: italic;
+}
+
 /* Navbar */
 .navbar {
     position: sticky;
@@ -273,6 +277,10 @@ body {
 #news-signup input[type="email"]:focus {
     border: 2px solid #007bff;
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+#news-signup input::placeholder{
+    font-style: italic;
 }
 
 #news-signup button {
