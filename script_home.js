@@ -14,6 +14,7 @@ toggleButton.addEventListener('click', () => {
 function DarkMode() {
     toggleButton.textContent = '🌕';
     body.style.color = "white";
+    body.style.backgroundColor = "black";
     
     for (let i = 0; i < locationcards.length; i++) {
         locationcards[i].style.background = 'linear-gradient(to bottom, #333333, #666666)';
@@ -28,6 +29,7 @@ function DarkMode() {
 function LightMode() {
     toggleButton.textContent = '🌙';
     body.style.color = "black";
+    body.style.backgroundColor = "white";
     
     for (let i = 0; i < locationcards.length; i++) {
         locationcards[i].style.background = 'linear-gradient(to bottom, #f0f0f0, #d3d3d3)';
