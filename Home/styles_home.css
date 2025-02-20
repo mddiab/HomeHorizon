@@ -224,6 +224,14 @@ body {
     max-width: 800px;
 }
 
+#missionbox {
+    background: rgba(60, 60, 120, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
 /* News Signup */
 #news-signup {
     background-color: #f8f9fa;
