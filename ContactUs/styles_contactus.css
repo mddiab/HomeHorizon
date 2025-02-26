@@ -10,27 +10,52 @@ body {
 .top-bar {
     display: flex;
     justify-content: flex-end;
-    padding: 15px 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    align-items: center;
+    padding: 12px 20px;
+    background: rgba(25, 25, 25, 0.7); /* Dark semi-transparent */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Top Bar Buttons */
 .top-bar button {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 0 8px;
+    padding: 12px 24px;
     border: none;
     outline: none;
-    background-color: #1e1e1e;
-    color: #eee;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+    color: #e0e0e0;
+    font-size: 16px;
     font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .top-bar button:hover {
-    transform: translateY(-5px);
-    background-color: #007bff;
+    background: linear-gradient(135deg, #cda36b, #b58342);
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(205, 163, 107, 0.4);
+}
+
+#toggleModeBtn {
+    font-size: 18px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#toggleModeBtn:hover {
+    background: linear-gradient(135deg, #e0b878, #cda36b);
+    color: #1a1a1a;
 }
 
 /* Hero */
@@ -111,7 +136,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background: #007bff;
+    background: linear-gradient(135deg, #e0b878, #cda36b);
     color: white;
 }
 
@@ -142,7 +167,7 @@ body {
 .contact-form h3, .contact-details h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #B39360;
 }
 
 .contact-form label {
@@ -176,10 +201,10 @@ body {
     transition: 0.5s;
     font-weight: 400;
     font-size: 17px;
-    border: 1px solid #00A97F;
+    border: 1px solid #B39360;
     font-family: inherit;
     text-transform: uppercase;
-    color: #00A97F;
+    color: #B39360;
     z-index: 1;
     margin-top: 15px;
     width: 100%;
@@ -195,7 +220,7 @@ body {
     position: absolute;
     border-radius: 50%;
     z-index: -1;
-    background-color: #00A97F;
+    background-color: #B39360;
     transition: 1s ease;
 }
 
