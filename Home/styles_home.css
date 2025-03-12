@@ -87,6 +87,7 @@ body {
     align-items: center;
     padding: 15px 50px;
     background: var(--nav-bg);
+    color: var(--text-color);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     position: fixed;
@@ -95,7 +96,7 @@ body {
     transform: translateX(-50%);
     width: 90%;
     max-width: 1200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--card-shadow);
     z-index: 1000;
 }
 
@@ -110,11 +111,43 @@ body {
     color: var(--link-color);
     font-size: 18px;
     font-weight: 500;
-    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent box */
+    backdrop-filter: blur(5px);
+    display: inline-block;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: var(--link-hover);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links .active a {
+    color: var(--link-hover);
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .nav-links li a:hover {
     color: var(--link-hover);
+    background: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+    transform: scale(1.05);
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
 }
 
 /* Navigation Buttons */
