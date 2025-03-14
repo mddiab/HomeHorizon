@@ -234,6 +234,10 @@ footer {
 #Instagram { background-image: url('static/instalogo.png'); }
 #TikTok { background-image: url('static/tiktoklogo.png'); }
 
+.iSymbol{
+    color: red;
+}
+
 .social-card img {
     width: 24px;
     height: 24px;

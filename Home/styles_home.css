@@ -487,6 +487,10 @@ footer {
     background-position: center;
 }
 
+.iSymbol{
+    color: red;
+}
+
 #Facebook { background-image: url('static/facebooklogo.png'); }
 #Twitter { background-image: url('static/xlogo.png'); }
 #Instagram { background-image: url('static/instalogo.png'); }
