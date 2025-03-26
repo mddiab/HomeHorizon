@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Luxury Villa in Beirut",
+        "city": "Beirut",
+        "price": "$1,200,000",
+        "image": "static/house1.jpg",
+        "description": "A stunning 4-bedroom villa with a private pool and sea view.",
+        "size": "350 sqm"
+    },
+    {
+        "id": 2,
+        "title": "Modern Apartment in Jounieh",
+        "city": "Jounieh",
+        "price": "$450,000",
+        "image": "static/house2.jpg",
+        "description": "A stylish 2-bedroom apartment with a spacious balcony.",
+        "size": "180 sqm"
+    },
+    {
+        "id": 3,
+        "title": "Cozy Chalet in Faraya",
+        "city": "Faraya",
+        "price": "$350,000",
+        "image": "static/house3.jpg",
+        "description": "A beautiful winter retreat with a fireplace and mountain view.",
+        "size": "120 sqm"
+    },
+    {
+        "id": 4,
+        "title": "Seaside Apartment in Batroun",
+        "city": "Batroun",
+        "price": "$600,000",
+        "image": "static/house4.jpg",
+        "description": "A 3-bedroom apartment with direct beach access.",
+        "size": "200 sqm"
+    },
+    {
+        "id": 5,
+        "title": "Penthouse in Downtown Beirut",
+        "city": "Beirut",
+        "price": "$2,000,000",
+        "image": "static/house5.jpg",
+        "description": "A luxurious penthouse with panoramic city views.",
+        "size": "400 sqm"
+    },
+    {
+        "id": 6,
+        "title": "Spacious House in Zahle",
+        "city": "Zahle",
+        "price": "$500,000",
+        "image": "static/house6.jpg",
+        "description": "A 5-bedroom house with a large garden and garage.",
+        "size": "300 sqm"
+    },
+    {
+        "id": 7,
+        "title": "Elegant Apartment in Saida",
+        "city": "Saida",
+        "price": "$320,000",
+        "image": "static/house7.jpg",
+        "description": "A modern 2-bedroom apartment with sea views.",
+        "size": "150 sqm"
+    },
+    {
+        "id": 8,
+        "title": "Villa in Beit Mery",
+        "city": "Beit Mery",
+        "price": "$750,000",
+        "image": "static/house8.jpg",
+        "description": "A peaceful villa with a private garden and mountain view.",
+        "size": "280 sqm"
+    },
+    {
+        "id": 9,
+        "title": "Duplex in Tripoli",
+        "city": "Tripoli",
+        "price": "$400,000",
+        "image": "static/house9.jpg",
+        "description": "A spacious 3-bedroom duplex in a prime location.",
+        "size": "220 sqm"
+    },
+    {
+        "id": 10,
+        "title": "Riverside Cabin in Baskinta",
+        "city": "Baskinta",
+        "price": "$250,000",
+        "image": "static/house10.jpg",
+        "description": "A charming wooden cabin near the river, perfect for nature lovers.",
+        "size": "100 sqm"
+    }
+]

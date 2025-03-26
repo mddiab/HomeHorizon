@@ -180,13 +180,76 @@ body {
 
 /*Body*/
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+}
 
+.controls label {
+    font-size: 18px;
+    margin-right: 10px;
+}
 
+.controls select,
+#cityFilter {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+}
 
+#housesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
 
+.house-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.house-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
+.house-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-right: 5px solid #ddd;
+}
 
+.house-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.house-info h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.house-info p {
+    color: #555;
+    font-size: 16px;
+    margin: 5px 0;
+}
 
 
 
