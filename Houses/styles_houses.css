@@ -253,6 +253,7 @@ body {
 .house-card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 
@@ -295,10 +296,21 @@ footer {
     background-position: center;
 }
 
-#Facebook { background-image: url('static/facebooklogo.png'); }
-#Twitter { background-image: url('static/xlogo.png'); }
-#Instagram { background-image: url('static/instalogo.png'); }
-#TikTok { background-image: url('static/tiktoklogo.png'); }
+#Facebook {
+    background-image: url('static/facebooklogo.png');
+}
+
+#Twitter {
+    background-image: url('static/xlogo.png');
+}
+
+#Instagram {
+    background-image: url('static/instalogo.png');
+}
+
+#TikTok {
+    background-image: url('static/tiktoklogo.png');
+}
 
 .social-card img {
     width: 24px;
