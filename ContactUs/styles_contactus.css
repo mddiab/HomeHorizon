@@ -79,7 +79,8 @@ body {
     transition: all 0.3s ease;
     padding: 8px 15px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1); /* Light translucent box */
+    background: rgba(255, 255, 255, 0.1);
+    /* Light translucent box */
     backdrop-filter: blur(5px);
     display: inline-block;
 }
@@ -104,7 +105,8 @@ body {
 
 .nav-links li a:hover {
     color: var(--link-hover);
-    background: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+    background: rgba(255, 255, 255, 0.2);
+    /* Slightly brighter on hover */
     transform: scale(1.05);
 }
 
@@ -155,7 +157,8 @@ body {
     margin-top: 30px;
 }
 
-.contact-form, .contact-details {
+.contact-form,
+.contact-details {
     padding: 30px;
     border-radius: 10px;
     width: 45%;
@@ -165,7 +168,8 @@ body {
     color: var(--text-color);
 }
 
-.contact-form h3, .contact-details h3 {
+.contact-form h3,
+.contact-details h3 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #B39360;
@@ -178,7 +182,8 @@ body {
     font-weight: 600;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     background-color: var(--card-bg);
     color: var(--text-color);
     width: 100%;
@@ -189,7 +194,8 @@ body {
     border: 2px solid var(--card-shadow);
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     border-color: #007bff;
     outline: none;
 }
@@ -251,7 +257,8 @@ body {
     filter: brightness(0.8);
 }
 
-.contact-form textarea,input::placeholder {
+.contact-form textarea,
+input::placeholder {
     font-style: italic;
 }
 
@@ -308,10 +315,21 @@ footer {
     background-position: center;
 }
 
-#Facebook { background-image: url('static/facebooklogo.png'); }
-#Twitter { background-image: url('static/xlogo.png'); }
-#Instagram { background-image: url('static/instalogo.png'); }
-#TikTok { background-image: url('static/tiktoklogo.png'); }
+#Facebook {
+    background-image: url('static/facebooklogo.png');
+}
+
+#Twitter {
+    background-image: url('static/xlogo.png');
+}
+
+#Instagram {
+    background-image: url('static/instalogo.png');
+}
+
+#TikTok {
+    background-image: url('static/tiktoklogo.png');
+}
 
 .social-card img {
     width: 24px;
@@ -349,4 +367,8 @@ footer {
 
 .quick-links a:hover {
     color: #03A9F4;
+}
+
+.map-section iframe {
+    border-radius: 10px;
 }
