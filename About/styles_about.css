@@ -59,23 +59,6 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
-#searchBar {
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 16px;
-    width: 60%;
-    border: 2px solid var(--text-color);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--text-color);
-    transition: all 0.3s ease;
-}
-
-#searchBar:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
 .hero input::placeholder {
     font-style: italic;
 }
@@ -117,7 +100,8 @@ body {
     transition: all 0.3s ease;
     padding: 8px 15px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1); /* Light translucent box */
+    background: rgba(255, 255, 255, 0.1);
+    /* Light translucent box */
     backdrop-filter: blur(5px);
     display: inline-block;
 }
@@ -142,7 +126,8 @@ body {
 
 .nav-links li a:hover {
     color: var(--link-hover);
-    background: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+    background: rgba(255, 255, 255, 0.2);
+    /* Slightly brighter on hover */
     transform: scale(1.05);
 }
 
@@ -229,10 +214,21 @@ footer {
     background-position: center;
 }
 
-#Facebook { background-image: url('static/facebooklogo.png'); }
-#Twitter { background-image: url('static/xlogo.png'); }
-#Instagram { background-image: url('static/instalogo.png'); }
-#TikTok { background-image: url('static/tiktoklogo.png'); }
+#Facebook {
+    background-image: url('static/facebooklogo.png');
+}
+
+#Twitter {
+    background-image: url('static/xlogo.png');
+}
+
+#Instagram {
+    background-image: url('static/instalogo.png');
+}
+
+#TikTok {
+    background-image: url('static/tiktoklogo.png');
+}
 
 .social-card img {
     width: 24px;
