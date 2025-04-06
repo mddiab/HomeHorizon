@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #f5f5f5;
+    --nav-bg: rgba(255, 255, 255, 0.15);
+    --nav-hover: rgba(255, 255, 255, 0.3);
+    --text-color: #333;
+    --link-color: #000;
+    --link-hover: #ffcc00;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --nav-bg: rgba(0, 0, 0, 0.3);
+    --nav-hover: rgba(255, 255, 255, 0.1);
+    --text-color: #f5f5f5;
+    --link-color: #ffffff;
+    --link-hover: #ffcc00;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+    background-image: url("static/herobackground.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero input::placeholder {
+    font-style: italic;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: var(--nav-bg);
+    color: var(--text-color);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px var(--card-shadow);
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Light translucent box */
+    backdrop-filter: blur(5px);
+    display: inline-block;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: var(--link-hover);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links .active a {
+    color: var(--link-hover);
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-links li a:hover {
+    color: var(--link-hover);
+    background: rgba(255, 255, 255, 0.2);
+    /* Slightly brighter on hover */
+    transform: scale(1.05);
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons button {
+    background: var(--nav-bg);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: var(--link-color);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background: var(--nav-hover);
+    transform: scale(1.05);
+}
+
+#toggleModeBtn {
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+/*Body*/
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-card {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#Facebook {
+    background-image: url('static/facebooklogo.png');
+}
+
+#Twitter {
+    background-image: url('static/xlogo.png');
+}
+
+#Instagram {
+    background-image: url('static/instalogo.png');
+}
+
+#TikTok {
+    background-image: url('static/tiktoklogo.png');
+}
+
+.social-card img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.social-card:hover {
+    transform: scale(1.1);
+    background-color: #007bff;
+}
+
+.middle-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #03A9F4;
+}
