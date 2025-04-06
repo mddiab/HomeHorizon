@@ -403,18 +403,22 @@ footer {
 
 #Facebook {
     background-image: url('static/facebooklogo.png');
+    background-color: white;
 }
 
 #Twitter {
     background-image: url('static/xlogo.png');
+    background-color: white;
 }
 
 #Instagram {
     background-image: url('static/instalogo.png');
+    background-color: white;
 }
 
 #TikTok {
     background-image: url('static/tiktoklogo.png');
+    background-color: white;
 }
 
 .social-card img {
