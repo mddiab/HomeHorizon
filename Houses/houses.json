@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "Modern Apartment",
-        "city": "Jounieh",
+        "city": "Meshref",
         "price": "$450,000",
         "image": "static/house2.jpg",
         "description": "A stylish 3-bedroom apartment with a spacious balcony.",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "title": "Spacious House",
-        "city": "Zahle",
+        "city": "Jbeil",
         "price": "$500,000",
         "image": "static/house6.jpg",
         "description": "A 5-bedroom house with a large garden and garage.",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "title": "Stylish Villa",
-        "city": "Beit Mery",
+        "city": "Jbeil",
         "price": "$750,000",
         "image": "static/house8.jpg",
         "description": "A peaceful villa with a private garden and mountain view.",
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "title": "Riverside Villa",
-        "city": "Zahle",
+        "city": "Meshref",
         "price": "$250,000",
         "image": "static/house10.jpg",
         "description": "A charming villa near the river, perfect for nature lovers.",
