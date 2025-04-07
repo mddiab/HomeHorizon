@@ -1,7 +1,6 @@
 let toggleButton = document.getElementById('toggleModeBtn');
 let body = document.body;
 
-// Dark Mode Toggle
 toggleButton.addEventListener('click', () => {
     if (body.classList.contains("dark-mode")) {
         body.classList.remove("dark-mode");
@@ -16,14 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
     let housesContainer = document.getElementById("housesContainer");
     let searchBar = document.getElementById("searchBar");
     let houseCountSelect = document.getElementById("houseCount");
+    
     let cityFilter = document.getElementById("cityFilter");
 
+    let urlParams = new URLSearchParams(window.location.search);
+    let initialLocation = urlParams.get('location');
+    if (initialLocation) {
+        cityFilter.value = initialLocation;
+    }
+
     let housesData = [];
-    let displayedCount = localStorage.getItem("houseCount") || "10"; // Default to 10
+    let displayedCount = localStorage.getItem("houseCount") || "10";
 
-    houseCountSelect.value = displayedCount; // Set dropdown to last saved value
+    houseCountSelect.value = displayedCount; 
 
-    // Fetch houses from JSON
     fetch("houses.json")
         .then(response => response.json())
         .then(data => {
@@ -34,15 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayHouses() {
         housesContainer.innerHTML = "";
-        const searchText = searchBar.value.trim().toLowerCase();
-        const cityText = cityFilter.value.trim().toLowerCase();
+        let searchText = searchBar.value.trim().toLowerCase();
+        let cityText = cityFilter.value.trim().toLowerCase();
 
         let filteredHouses = housesData.filter(house => 
             house.city.toLowerCase().includes(cityText) && 
             house.city.toLowerCase().includes(searchText)
         );
 
-        // Get the number of houses to display
         let limit = houseCountSelect.value === "all" ? filteredHouses.length : parseInt(houseCountSelect.value);
         filteredHouses = filteredHouses.slice(0, limit);
 
@@ -69,13 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Event Listeners
     searchBar.addEventListener("input", displayHouses);
 
     houseCountSelect.addEventListener("change", () => {
-        localStorage.setItem("houseCount", houseCountSelect.value); // Save selection
+        localStorage.setItem("houseCount", houseCountSelect.value);
         displayHouses();
     });
 
-    cityFilter.addEventListener("input", displayHouses); // Filter houses by city
+    cityFilter.addEventListener("input", displayHouses);
 });
