@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error loading houses:", error));
 
     function displayHouses() {
+        
         housesContainer.innerHTML = "";
         let searchText = searchBar.value.trim().toLowerCase();
         let cityText = cityFilter.value.trim().toLowerCase();
