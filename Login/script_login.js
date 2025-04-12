@@ -17,7 +17,7 @@ function saveUsers(users) {
     localStorage.setItem('users', JSON.stringify(users));
 }
 
-function signup(email, password) {
+function signup(fullName, email, password) {
     let users = getUsers();
 
     if (users.find(user => user.email === email)) {
@@ -25,26 +25,31 @@ function signup(email, password) {
         return;
     }
 
-    users.push({ email, password });
+    users.push({ fullName, email, password });
     saveUsers(users);
     alert("Signup successful! You can now log in.");
+
+    document.getElementById("signup-form").reset();
+
+    document.getElementById("signup-form").style.display = "none";
+    document.getElementById("login-form").style.display = "block";
 }
 
 function login(email, password) {
-
     let users = getUsers();
     let foundUser = users.find(user => user.email === email && user.password === password);
 
     if (foundUser) {
         alert("Login successful!");
-        localStorage.setItem("currentUser", email);
+        localStorage.setItem("currentUser", JSON.stringify(foundUser));
+
+        document.getElementById("login-form").reset();
+
         window.location.href = "../Home/home.html";
-    }
-    else {
+    } else {
         alert("Invalid email or password.");
     }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     let loginForm = document.getElementById("login-form");
@@ -62,9 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (signupForm) {
         signupForm.addEventListener("submit", (e) => {
             e.preventDefault();
+            let fullName = signupForm.fullName.value.trim();
             let email = signupForm.email.value.trim();
             let password = signupForm.password.value.trim();
-            signup(email, password);
+            signup(fullName, email, password);
         });
     }
 });
