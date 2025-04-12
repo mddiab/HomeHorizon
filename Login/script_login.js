@@ -21,8 +21,8 @@ function signup(email, password) {
     let users = getUsers();
 
     if (users.find(user => user.email === email)) {
-    alert("User already exists!");
-    return;
+        alert("User already exists!");
+        return;
     }
 
     users.push({ email, password });
@@ -31,7 +31,7 @@ function signup(email, password) {
 }
 
 function login(email, password) {
-    
+
     let users = getUsers();
     let foundUser = users.find(user => user.email === email && user.password === password);
 
