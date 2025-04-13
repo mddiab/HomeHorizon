@@ -28,9 +28,9 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background: var(--bg-color);
     color: var(--text-color);
-    overflow-x: hidden;
 }
 
 /* Hero */
@@ -187,16 +187,77 @@ body {
     cursor: pointer;
 }
 
-/*Body*/
+/*Body FAQ*/
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 120px auto 60px auto;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--card-shadow);
+    padding: 30px 25px;
+}
 
+.container h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+}
 
+.faq-container {
+    margin-top: 10px;
+}
 
+.accordion {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+}
 
+.accordion:hover,
+.accordion.active {
+    background-color: var(--bg-color);
+}
 
+.accordion:after {
+    content: "+";
+    font-size: 20px;
+    color: var(--text-color);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.accordion.active:after {
+    content: "-";
+}
 
+.panel {
+    padding: 15px 20px;
+    background-color: var(--bg-color);
+    border-left: 3px solid #6c346c;
+    border-radius: 0 0 8px 8px;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
 
-
+.panel p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
 
 
 /* Footer */
