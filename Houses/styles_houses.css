@@ -33,7 +33,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- NAVBAR --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -157,10 +156,13 @@ body {
     cursor: pointer;
 }
 
-/*Body*/
+.hero {
+    display: none;
+}
 
 .controls {
     display: flex;
+    padding-top: 80px;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -193,7 +195,6 @@ body {
     font-style: italic;
 }
 
-/* House Card */
 .house-card {
     display: flex;
     flex-direction: row;
@@ -207,7 +208,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* House Info */
 .house-info {
     padding: 20px;
     flex-grow: 1;
@@ -240,7 +240,6 @@ body {
 }
 
 
-/* Footer */
 footer {
     background-color: #222;
     color: white;
@@ -344,4 +343,146 @@ footer {
 
 .quick-links a:hover {
     color: #03A9F4;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 430px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .nav-left .logo {
+        height: 40px;
+    }
+
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        background: #1e1e2f;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .nav-center.active {
+        display: flex;
+    }
+
+    .nav-center li a {
+        font-size: 16px;
+        padding: 8px;
+        color: #e3e3e3;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .nav-right .auth-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 13px;
+    }
+
+    #toggleModeBtn {
+        font-size: 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .controls label {
+        font-size: 16px;
+    }
+
+    .controls select,
+    #cityFilter {
+        width: 90%;
+    }
+
+    #housesContainer {
+        padding: 20px;
+    }
+
+    .house-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .house-card img {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .house-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .house-info h3 {
+        font-size: 20px;
+    }
+
+    .house-info p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .social-card {
+        width: 40px;
+        height: 40px;
+    }
+
+    .middle-content img {
+        width: 220px;
+    }
+
+    .quick-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .quick-links a {
+        font-size: 14px;
+    }
 }

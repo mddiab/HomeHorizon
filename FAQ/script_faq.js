@@ -35,3 +35,10 @@ $(document).ready(function () {
         });
     });
 });
+
+let menuToggle = document.getElementById('menuToggle');
+let navCenter = document.querySelector('.nav-center');
+
+menuToggle.addEventListener('click', () => {
+    navCenter.classList.toggle('active');
+});

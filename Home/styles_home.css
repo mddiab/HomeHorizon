@@ -33,7 +33,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero */
 .hero {
     background-image: url("static/herobackground.jpg");
     background-size: cover;
@@ -80,7 +79,6 @@ body {
     font-style: italic;
 }
 
-/* --- NAVBAR --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -204,7 +202,6 @@ body {
     cursor: pointer;
 }
 
-/* Sections */
 .section {
     padding: 60px 20px;
     text-align: center;
@@ -215,7 +212,6 @@ body {
     font-weight: 700;
 }
 
-/* Location Cards */
 .locations-container {
     display: flex;
     justify-content: center;
@@ -279,7 +275,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Mission Section */
 #mission {
     display: flex;
     justify-content: space-between;
@@ -326,7 +321,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* News Signup */
 #news-signup {
     display: flex;
     justify-content: space-between;
@@ -414,7 +408,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Top Reviews */
 #top-reviews {
     padding: 80px 10%;
     text-align: center;
@@ -475,7 +468,6 @@ body {
     line-height: 1.6;
 }
 
-/* Footer */
 footer {
     background-color: #222;
     color: white;
@@ -579,4 +571,204 @@ footer {
 
 .quick-links a:hover {
     color: #03A9F4;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 430px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .nav-left .logo {
+        height: 40px;
+    }
+
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        background: #1e1e2f;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .nav-center.active {
+        display: flex;
+    }
+
+    .nav-center li a {
+        font-size: 16px;
+        padding: 8px;
+        color: #e3e3e3;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .nav-right .auth-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 13px;
+    }
+
+    #toggleModeBtn {
+        font-size: 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .hero {
+        padding: 70px 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    #searchBar {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .section {
+        padding: 40px 10px;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .locations-container {
+        gap: 20px;
+    }
+
+    .location-card {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .location-card p {
+        font-size: 0.95rem;
+    }
+
+    .location-card button {
+        width: 70%;
+    }
+
+    #mission {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #mission .missionTxt {
+        max-width: 100%;
+    }
+
+    #mission .missionImg img {
+        width: 100%;
+    }
+
+    #news-signup {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #newsbox {
+        max-width: 100%;
+    }
+
+    #newsbox form {
+        width: 100%;
+        align-items: center;
+    }
+
+    #newsbox input[type="email"] {
+        width: 90%;
+    }
+
+    .newsboxImg img {
+        width: 100%;
+    }
+
+    #top-reviews {
+        padding: 40px 5%;
+    }
+
+    #top-reviews h2 {
+        font-size: 28px;
+    }
+
+    #top-reviews p {
+        font-size: 16px;
+    }
+
+    .review-cards {
+        gap: 20px;
+    }
+
+    .review-card {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .social-card {
+        width: 40px;
+        height: 40px;
+    }
+
+    .middle-content img {
+        width: 220px;
+    }
+
+    .quick-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .quick-links a {
+        font-size: 14px;
+    }
 }

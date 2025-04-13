@@ -34,7 +34,6 @@ body {
 }
 
 
-/* --- NAVBAR --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -158,7 +157,6 @@ body {
     cursor: pointer;
 }
 
-/* Contact Section */
 .contact-section {
     padding: 60px 20px;
     text-align: center;
@@ -284,7 +282,6 @@ input::placeholder {
     line-height: 1.5;
 }
 
-/* Map Section */
 .map-section {
     text-align: center;
     padding: 40px 20px;
@@ -292,7 +289,6 @@ input::placeholder {
     background-color: var(--bg-color);
 }
 
-/* Footer */
 footer {
     background-color: #222;
     color: white;
@@ -400,4 +396,146 @@ footer {
 
 .map-section iframe {
     border-radius: 10px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 430px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .nav-left .logo {
+        height: 40px;
+    }
+
+    .nav-center {
+        display: none;
+        flex-direction: column;
+        background: #1e1e2f;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .nav-center.active {
+        display: flex;
+    }
+
+    .nav-center li a {
+        font-size: 16px;
+        padding: 8px;
+        color: #e3e3e3;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .nav-right .auth-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 13px;
+    }
+
+    #toggleModeBtn {
+        font-size: 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .contact-section {
+        padding: 40px 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-form,
+    .contact-details {
+        width: 100%;
+        min-width: 0;
+        padding: 20px;
+    }
+
+    .contact-form h3,
+    .contact-details h3 {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 15px;
+    }
+
+    .map-section {
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .map-section iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .social-card {
+        width: 40px;
+        height: 40px;
+    }
+
+    .middle-content img {
+        width: 220px;
+    }
+
+    .quick-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .quick-links a {
+        font-size: 14px;
+    }
 }
