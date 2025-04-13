@@ -31,3 +31,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
     event.target.reset();
 });
 
+let loginSignupButton = document.querySelector('.auth-btn');
+loginSignupButton.addEventListener('click', () => {
+    window.location.href = '../Login/login.html';
+});

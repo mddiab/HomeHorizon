@@ -83,3 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cityFilter.addEventListener("input", displayHouses);
 });
+
+let loginSignupButton = document.querySelector('.auth-btn');
+loginSignupButton.addEventListener('click', () => {
+    window.location.href = '../Login/login.html';
+});

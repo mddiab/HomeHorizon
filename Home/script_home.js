@@ -10,3 +10,8 @@ toggleButton.addEventListener('click', () => {
         toggleButton.textContent = '🔆';
     }
 });
+
+let loginSignupButton = document.querySelector('.auth-btn');
+loginSignupButton.addEventListener('click', () => {
+    window.location.href = '../Login/login.html';
+});
