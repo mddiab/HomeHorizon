@@ -218,7 +218,7 @@ body {
 
 .contact-form button {
     border: 1px solid var(--link-hover);
-    color: var(--link-hover);
+    color: #ffcc00;
     padding: 0.8em 1.7em;
     background-color: transparent;
     border-radius: 0.3em;
@@ -266,7 +266,7 @@ body {
 }
 
 .contact-form button:hover {
-    color: rgb(10, 25, 30);
+    color: #ffcc00;
 }
 
 .contact-form button:active {
