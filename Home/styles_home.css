@@ -87,7 +87,6 @@ body {
     left: 0;
     width: 100%;
     background: #1e1e2f;
-    /* Solid dark color */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -163,19 +162,16 @@ body {
 }
 
 
-/* Text inside button */
 .nav-right .auth-btn span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
 }
 
-/* Hover effect on text */
 .nav-right .auth-btn:hover span {
     color: black;
 }
 
-/* Background animation */
 .nav-right .auth-btn::before,
 .nav-right .auth-btn::after {
     position: absolute;
@@ -199,7 +195,6 @@ body {
     transform: translate3d(100%, 0, 0);
 }
 
-/* Toggle Mode Button (🌙) */
 #toggleModeBtn {
     font-size: 20px;
     padding: 8px 12px;
